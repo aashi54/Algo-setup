@@ -2,16 +2,19 @@ import react from 'react'
 import './App.css'
 import Mainpage from './components/Mainpage'
 import Card from './components/CardComponent';
+import Apps from './Apps'
 
 function App() {
   
 
   return (
     <>
-    <div className='main'>
+{/*     
       <Mainpage/>
-      <Card/>
-      </div>
+      <Card/> */}
+
+      <Apps/>
+      
     </>
   )
 }

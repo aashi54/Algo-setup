@@ -97,6 +97,10 @@
     animation: slideInFromTop 1s forwards;
   }
 
+  .h3-tag{
+   padding-right: 120px;
+  }
+
   @keyframes slideInFromTop {
     from {
       top: -50px; 

@@ -1,45 +1,109 @@
 .card-container {
-    display: flex;
-    justify-content: space-between;
-    margin: -25px ;
-    max-width: 1200px;
-    margin-left: 60px;
-    height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin: -25px ;
+  max-width: 1200px;
+  margin-left: 60px;
+  height: 100px;
+  opacity: 0; /* Start the container with opacity 0 */
+animation: slideInFromBottom 1s forwards; /* Apply the animation */
 
-  }
-  
-  .card {
-    display: flex;
-    align-items: center;
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    max-width: 350px;
-    height: 100px;
+}
 
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px); /* Start position 50px below the normal position */
   }
-  
-  .circle-image {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    /* background-color: #4caf50; */
-    margin-right: 10px;
+  to {
+    opacity: 1;
+    transform: translateY(0); /* End position at the normal position */
   }
+}
+
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 350px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+
+}
+.card-box {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #1e3a55;
+  transform: translateY(-50%);
+  z-index: 2; /* Set a higher z-index to place the box on top of the card container */
+  /* pointer-events: none;  */
+  display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer; /* Change the cursor to a pointer on hover */
+transition: background-color 0.3s ease; 
   
-  .card-text {
-    flex: 1;
-  }
-  
-  /* Additional styles for h3 and p tags (you can customize them further) */
-  h3 {
-    margin: 0;
-    font-size: 18px;
-  }
-  
-  p {
-    margin: 5px 0;
-  }
-  
+}
+
+.card-box i {
+  color: white; /* Set the color of the icon to white */
+  font-size: 18px; /* Adjust the size of the icon */
+  transition: color 0.3s ease;
+}
+
+
+.card-box:hover i {
+
+  color: #666666; /* Change icon color on hover */
+}
+
+.card-box:active {
+  background-color: #ff3838; /* Change background color on click */
+}
+
+.card-box:active i {
+  color: #f0f0f0; /* Change icon color on click */
+}
+
+
+
+.circle-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  /* background-color: #4caf50; */
+  margin-right: 10px;
+}
+
+.card-text {
+  flex: 1;
+}
+
+/* Additional styles for h3 and p tags (you can customize them further) */
+h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+p {
+  margin: 5px 0;
+}
+
+
+.green {
+color: green;
+}
+
+.red {
+color: red;
+}

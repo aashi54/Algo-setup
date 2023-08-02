@@ -27,7 +27,7 @@ const Mainpage = () => {
 
       <div className="left-div">
         <h2 className="left-text">Automate Your Trading and Investments</h2>
-        <h3>Take control of your investments like never before with our advanced algo trading platform, designed to optimize your strategies and supercharge your trading success.</h3>
+        <h3 class='h3-tag'>Take control of your investments like never before with our advanced algo trading platform, designed to optimize your strategies and supercharge your trading success.</h3>
       </div>
 
       <div className="right-div">

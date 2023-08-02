@@ -1,35 +1,24 @@
 import React from 'react';
 import './CardComponent.css'; 
-import nifty_img from '../images/nifty_img.png';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import cardData from './CardData';
+import Card from './Card';
 
 const CardComponent = () => {
+  
   return (
     <> 
     <div className="card-container">
-      <div className="card">
-        <img className="circle-image" src={nifty_img}></img>
-        <div className="card-text">
-          <h3>Nifty</h3>
-          <p>Price</p>
-        </div>
-      </div>
-
-      <div className="card">
-      <img className="circle-image"></img>
-        <div className="card-text">
-          <h3>Gold</h3>
-          <p>Price</p>
-        </div>
-      </div>
-
-      <div className="card">
-      <img className="circle-image"></img>
-        <div className="card-text">
-          <h3>Bitcoin</h3>
-          <p>Price</p>
-        </div>
-      </div>
-     
+    {cardData.map((card, index) => (
+          <Card
+            key={index}
+            title={card.title}
+            imgSrc={card.imgSrc}
+            price={card.price}
+            change={card.change}
+            color={card.color}
+          />
+        ))}
     </div>
 
     <br></br>
