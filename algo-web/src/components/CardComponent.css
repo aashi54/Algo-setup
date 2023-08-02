@@ -1,0 +1,45 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin: -25px ;
+    max-width: 1200px;
+    margin-left: 60px;
+    height: 100px;
+
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 350px;
+    height: 100px;
+
+  }
+  
+  .circle-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    /* background-color: #4caf50; */
+    margin-right: 10px;
+  }
+  
+  .card-text {
+    flex: 1;
+  }
+  
+  /* Additional styles for h3 and p tags (you can customize them further) */
+  h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
