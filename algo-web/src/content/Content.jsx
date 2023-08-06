@@ -1,5 +1,5 @@
 
-import react, {useState} from 'react'
+import react, {useState, useEffect} from 'react'
 import './Content.css'
 import { FiSettings } from 'react-icons/fi';
 import { RiChat1Line, RiChat3Line, RiFileSettingsLine, RiFolderSettingsFill, RiListSettingsLine, RiMailSettingsLine, RiSettingsLine, RiToolsLine, RiTwitterLine, RiUserSettingsLine} from 'react-icons/ri';
@@ -26,6 +26,13 @@ const Content = ()=>{
 
   const [value_ii] = useState(Math.floor(Math.random() * 100));
   const [value_ii_offset] = useState(315 - (value_ii / 100) * 315);
+
+
+  const [username, setusername] = useState("");
+
+  useEffect(()=>{
+   setusername(localStorage.getItem("username"));
+  },[])
 
     return(
         <div className='content'>
@@ -215,7 +222,7 @@ const Content = ()=>{
           </div>
 
           <div className="info">
-            <h2 className="admin-name">Asmita Patidar</h2>
+            <h2 className="admin-name">{username}</h2>
             <span className="admin-about">Trader</span>
           </div>
 

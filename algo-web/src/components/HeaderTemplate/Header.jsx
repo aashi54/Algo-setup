@@ -4,10 +4,18 @@ import { BiSearch } from "react-icons/bi";
 import { AiOutlineUser } from "react-icons/ai";
 import { TbMessages } from "react-icons/tb";
 import { IoAnalytics } from "react-icons/io5";
-import { HiOutlineMoon } from "react-icons/hi";
+import { HiOutlineLogout, HiOutlineMoon } from "react-icons/hi";
 import { RiSettingsLine } from "react-icons/ri";
+import { signOut } from "firebase/auth";
+import { auth } from "../../Firebase"
 
 const Header = () => {
+
+  const logout = ()=>{
+    signOut(auth);
+  };
+
+
   return (
     <header>
       <div className="search-bar">
@@ -24,7 +32,7 @@ const Header = () => {
 
         <HiOutlineMoon className="icon"/>
         <RiSettingsLine className="icon" />
-        <HiOutlineMoon className="icon" />
+        <HiOutlineLogout className="icon" onClick={logout}  />
 
         <div className="divider"></div>
         <div className="user">

@@ -11,7 +11,7 @@
     min-height: 100vh;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: #111;
+    background: linear-gradient(40deg, #0c2e57de, #010911);
 
 }
 

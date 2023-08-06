@@ -43,9 +43,6 @@
     --clr-ii:#010911;
     
 
-    --clr-i: #00464e;
-    --clr-ii: #810551;
-
   }
   
   .content .row.header:nth-child(1) {
@@ -101,8 +98,7 @@
     --clr-i: #0c2e57de;
     --clr-ii:#010911;
 
-    --clr-i: #00464e;
-    --clr-ii: #810551;
+
 
   }
   
@@ -138,13 +134,12 @@
     --clr-i: #0c2e57de;
     --clr-ii:#010911;
 
-    --clr-i: #00464e;
-    --clr-ii: #810551;
+   
   }
   
   .content .row.inv-bg {
-    --clr-i: #810551;
-    --clr-ii: #00464e;
+    --clr-i: #0c2e57de;
+    --clr-ii:#010911;
 
   }
   
@@ -258,9 +253,6 @@
 
     --clr-i: #0c2e57de;
     --clr-ii:#010911;
-
-    --clr-i: #00464e;
-    --clr-ii: #810551;
 
     grid-column: span 2;
     align-items: flex-start;

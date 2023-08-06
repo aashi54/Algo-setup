@@ -1,4 +1,4 @@
-import react from "react";
+import react, { useEffect } from "react";
 import "./Navigation.css";
 import Nav from "../NaviconTemplate/Nav";
 import { FiChevronLeft } from "react-icons/fi";
@@ -17,6 +17,11 @@ import { useState } from "react";
 
 const Navigation = () => {
   const [nav, setnav] = useState(false);
+  const [username, setusername] = useState("");
+
+  useEffect(()=>{
+   setusername(localStorage.getItem("username"));
+  },[])
 
   return (
     <div className={`navigation ${nav && "active"}`}>
@@ -36,7 +41,7 @@ const Navigation = () => {
             className="profile-img"
           />
         </div>
-        <span>Asmita Patidar</span>
+        <span>{username}</span>
       </header>
 
       <Nav Icon={TbDashboard} title={"Dashboard"} />
