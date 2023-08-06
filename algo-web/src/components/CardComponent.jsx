@@ -22,7 +22,9 @@ const CardComponent = () => {
     </div>
 
     <br></br>
-
+   <br></br>
+   <br></br>
+   <br></br>
     <div>
         <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime laboriosam minima dolor modi temporibus sit cum, debitis ullam nam consectetur quae magnam pariatur aperiam consequatur placeat inventore quos illo. Earum?</h1>
       </div>

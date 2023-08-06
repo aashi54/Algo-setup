@@ -20,11 +20,10 @@ const Mainpage = () => {
               <a href="#">About Us</a>
               <a href="#">Our Blogs</a>
             </div>
-            <button className='login-btn'>Login </button>
-            <button className='login-btn'> <Link to='/login'>Login</Link></button>
+            <button className='login-btn'> <Link className='connect' to='/login'> <b>Connect</b></Link></button>
             
 
-            <button className='register-btn'>Register </button>
+            {/* <button className='register-btn'>Register </button> */}
           </div>
         </div>
       </div>

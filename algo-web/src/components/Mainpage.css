@@ -81,10 +81,10 @@
     margin-right: 40px;
   }
   
-  .login-btn:hover,
-  .register-btn:hover {
+  .login-btn:hover {
     background-color: rgb(255, 255, 255); 
     color: black; 
+    
   }
 
   .left-div {
@@ -135,6 +135,17 @@
     width: 390px; 
     height: 500px;
    padding-right: -70px;
+  }
+
+
+  .connect{
+    color: white;
+    text-decoration: none;
+    
+  }
+
+  .connect:hover{
+    color: black;
   }
 
 
