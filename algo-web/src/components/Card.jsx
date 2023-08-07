@@ -7,10 +7,10 @@ const CardComponent = ({ title, imgSrc, price, change, color }) => {
     <div className="card">
       <img className="circle-image" src={imgSrc} alt={title}></img>
       <div className="card-text">
-        <h3>{title}</h3>
-        <p>
+        <h3>{title} <span>  {price} <span className={color}>{change}</span> </span></h3>
+        {/* <p>
           {price} <span className={color}>{change}</span>
-        </p>
+        </p> */}
       </div>
       <div className="card-box">
         <i className="fas fa-arrow-right"></i>

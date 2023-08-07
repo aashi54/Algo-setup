@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-div {
+    flex: 1;
+  }
+  
+  .left-div img {
+    width: 100%;
+    max-width: 200px; /* Adjust the image max-width as needed */
+    height: auto;
+  }
+  
+  .right-div {
+    flex: 2;
+    padding: 0 20px; /* Add some padding to separate the content from the sides */
+  }
+  
+  .right-div h3 {
+    margin: 0;
+  }
+  
+  .right-div p {
+    margin: 0;
+  }
+  
